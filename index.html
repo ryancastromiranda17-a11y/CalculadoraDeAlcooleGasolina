@@ -12,12 +12,12 @@
 
     <div class="calculadora">
         <div class="calcul__gasolina">
-            <button onclick="selecionar('gasolina')">Calcular Gasolina</button>
+            <button onclick="selecionar('Gasolina (preço por litro)')">Calcular Gasolina</button>
 
-            <button onclick="selicionar('alcool')">Calcular Álcool</button>
+            <button onclick="selecionar('Álcool (preço por litro)')">Calcular Álcool</button>
         </div>
 
-        <div class="distancia">
+        <div class=" distancia">
             <h2>Distância da viagem (km):</h2>
             <input type="number" id="distan">
         </div>
@@ -29,8 +29,9 @@
 
 
         <div class="preco">
-            <h2>Gasolina (preço por litro)</h2>
-            <input type="number" id="preco" placeholder="R$ 0,00">
+            <h2 id="combustivel">Gasolina (preço por litro)</h2>
+            <input type="text" id="preco" placeholder="R$ 0,00" oninput="formatar()">
+
         </div>
 
         <button onclick="calcular()" class="calcular">Calcular</button>\
