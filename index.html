@@ -9,40 +9,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="d-flex justify-content-center align-items-center min-vh-100">
+<body>
 
-    <div class="calculadora container p-4 rounded text-center">
-        <div class="calcul__gasolina d-flex gap-2 justify-content-center mb-4 flex-wrap">
-            <button class="btn btn-dark px-4" onclick="selecionar('Gasolina (preço por litro)')">Calcular
-                Gasolina</button>
+    <div class="calculadora">
+        <div class="calcul__gasolina">
+            <button onclick="selecionar('Gasolina (preço por litro)')">Calcular Gasolina</button>
 
-            <button class="btn btn-dark px-4" onclick="selecionar('Álcool (preço por litro)')">Calcular Álcool</button>
+            <button onclick="selecionar('Álcool (preço por litro)')">Calcular Álcool</button>
         </div>
 
-        <div class="mb-3 distancia">
-            <h2 class="h5 text-white mb-2">Distância da viagem (km):</h2>
-            <input type="number" id="distan" class="form-control">
+        <div class=" distancia">
+            <h2>Distância da viagem (km):</h2>
+            <input type="number" id="distan">
         </div>
 
-        <div class="mb-3 rendimento">
-            <h2 class="h5 text-white mb-2">Rendimento do carro (km/l):</h2>
-            <input type="number" id="consumo" class="form-control">
+        <div class="rendimento">
+            <h2>Rendimento do carro (km/l):</h2>
+            <input type="number" id="consumo">
         </div>
 
 
-        <div class="mb-3 preco">
-            <h2 class="h5 text-white mb-2" id="combustivel">Gasolina (preço por litro)</h2>
-            <input type="text" id="preco" placeholder="R$ 0,00" oninput="formatar()" class="form-control">
+        <div class="preco">
+            <h2 id="combustivel">Gasolina (preço por litro)</h2>
+            <input type="text" id="preco" placeholder="R$ 0,00" oninput="formatar()">
 
         </div>
 
-        <button onclick="calcular()" class="calcular btn btn-dark w-75 mx-auto">Calcular</button>
+        <button onclick="calcular()" class="calcular">Calcular</button>\
 
-        <div class="result mx-auto mt-4" id="resultado"></div>
+        <div class="result" id="resultado"></div>
     </div>
 
 </body>
 <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
